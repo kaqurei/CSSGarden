@@ -1,0 +1,44 @@
+/*-------------------------------------- ARCHIVES --------------------------------------*/
+
+.design-archives {
+	border-radius: 20px;
+	
+	padding: 3vw;
+	margin: 2vw;
+
+	.archives {
+	   text-align: center; 
+	   color:$color-2;
+	   font-size: 2vmax;
+	}
+
+    li {
+		border-radius: 10px ;
+		border: 1px solid $color-2;
+		
+		margin: 20% 0;
+		margin-left: -25%;;
+		padding: 10% 15%;
+		list-style: none;
+		font-family: $primary-font;
+
+
+		// changes color and slowly grows each
+		&:hover {
+			background-color: $color-6;
+			border:none;
+			-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+		transform: scale(1.1);
+		transition: all .75s;
+		}
+
+	}
+
+	
+	a {
+		color: $color-2;
+		text-decoration: none;
+	}
+
+}

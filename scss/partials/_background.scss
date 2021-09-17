@@ -1,0 +1,149 @@
+/*-------------------------------------- BACKGROUND --------------------------------------*/
+
+// Applies gradient background to body container using the element id 
+body {
+	background: $color-8;
+	background: linear-gradient(0deg, $color-9 0%, $color-10 21%, $color-11 100%);
+	margin:auto;
+	max-width: 60vw;
+}
+  
+// Applies "aquarium glass" background to elements
+.preamble, .summary, .explanation, .participation, .benefits, .requirements {
+    margin: 2vw;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+	border-radius: 20px;
+	z-index: 1;
+	background: rgba(219, 248, 254, 0.2);
+	padding: 1vw;
+}
+
+// Gives aquarium glass a sort of blur effect
+.preamble:before, .summary:before, .explanation:before, .participation:before, .benefits:before, .requirements:before, footer:before, {
+	content: "";
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+  
+// Makes summary box more rounded as per our wireframe for large view
+.zen-summary {
+	border-radius: 50px;
+	padding: 2vw;
+	text-align: center;
+}
+
+// Weves and bubbles
+.page-wrapper {
+    position: relative;
+}
+.page-wrapper::after,
+.page-wrapper::before {
+    background-color: white;
+    width: 290%;
+    height: 150px;
+    position: absolute;
+    content: '';
+    top: -50px;
+    left: -80%;
+    border-radius: 100%;
+    animation: waves 10s ease infinite;
+    opacity: 0.3;
+}
+.page-wrapper::before {
+    animation-delay: 5s;
+    opacity: 0.2;
+}
+@keyframes waves {
+    0%, 100% {transform: rotate(-4deg);}
+    50% {transform: rotate(4deg);}
+}
+//bubble 1
+.intro:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    left: -30%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    animation: bubble1 10s ease-in-out infinite;
+    animation-duration: 15s;
+    opacity: 0.5;
+  }
+@keyframes bubble1 {
+    0% {bottom: 1%; opacity: 0;}
+    100% {bottom: 100%; left:30%;}
+}
+//bubble 2
+.intro::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    animation: bubble2 10s ease-in-out infinite;
+    animation-delay: .3s;
+    animation-duration: 10s;
+    opacity: .6;
+  }
+@keyframes bubble2 {
+    0% {bottom: 50%; opacity: 0;}
+    100% {bottom: 100%; left:50%}
+}
+//bubble 3
+.supporting::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 80%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    animation: bubble3 10s ease-in-out infinite;
+    opacity: 0.2;
+  }
+@keyframes bubble3 {
+    0% {top: 80px; left:120%}
+    100% {top: -60px; left:130%}
+}
+//bubble 4
+.supporting::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 80%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    animation: bubble4 10s ease-in-out infinite;
+    opacity: 0.2;
+  }
+@keyframes bubble4 {
+    0% {top: 150px; left: -27%}
+    100% {top: -60px;left: -33% }
+}
+//bubble 5
+.sidebar::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: 80%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    animation: bubble5 10s ease-in-out infinite;
+    opacity: .5;
+  }
+@keyframes bubble5 {
+    0% {top: 50%; left: 110%}
+    100% {top: -60px;left: 130% }
+}

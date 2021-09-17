@@ -1,0 +1,53 @@
+/*-------------------------------------- TYPOGRAPHY --------------------------------------*/
+
+h1 {
+	font-family: $header-font;
+	font-size: 4vmax;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 0.4em;
+}
+
+h2 {
+	font-family: $secondary-font;
+	font-size: 2vmax;
+	margin: 1em 0;
+}
+
+h3 {
+	font-family:  $secondary-font;
+	font-size: 4vw;
+	margin: 1em .5em;
+	color: $color-10;
+    font-weight: bold;
+    
+}
+
+p {
+	margin: 1em .5em;
+	font-family: $primary-font;
+	font-size: 2vw;
+	line-height: 1.4;
+	//color: lighten($color-7, 25%);
+	color:$color-2;
+	a {
+        text-decoration: none;
+		color: $color-1;
+        &:hover {
+            color: $color-6;
+    }
+	}
+	
+
+
+
+// @include MQ(S) {
+// 	font-size: 1.6rem;
+// 	line-height: 1.6;
+// }
+}
+
+// Gets rid of dotted line under abbreviations
+abbr {
+	text-decoration: none;
+}

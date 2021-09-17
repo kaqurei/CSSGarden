@@ -1,0 +1,39 @@
+/* Header 1 Floating */
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+/* Header 2 zoom-in zoom-out effect */
+
+@-webkit-keyframes zoomUnderwater {
+	from { 	font-size: 3vw;
+		    color: $transparent-coral-twoPercent; }
+	to { 	font-size: 4vw; 
+		    color: $transparent-coral-eightPercent; }
+}
+@-moz-keyframes zoomUnderwater {
+	from { 	font-size: 3vw;
+		color: $transparent-coral-twoPercent; }
+	to { 	font-size: 4vw; 
+		color: $transparent-coral-eightPercent; }
+}
+@-ms-keyframes zoomUnderwater {
+	from { 	font-size: 3vw;
+		color: $transparent-coral-twoPercent; }
+	to { 	font-size: 4vw; 
+		color: $transparent-coral-eightPercent; }
+}
+@-o-keyframes zoomUnderwater {
+	from { 	font-size: 3vw;
+		color: $transparent-coral-twoPercent; }
+	to { 	font-size: 4vw; 
+		color: $transparent-coral-eightPercent; }
+}
+@keyframes zoomUnderwater {
+	from { 	font-size: 3vw;
+		color: $transparent-coral-twoPercent; }
+	to { 	font-size: 4vw; 
+		color: $transparent-coral-eightPercent; }
+}

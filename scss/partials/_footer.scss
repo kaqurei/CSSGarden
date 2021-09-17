@@ -1,0 +1,56 @@
+/* -------------------------------------- FOOTER -------------------------------------- */
+
+// Footer alignment
+footer {
+	margin: 5% auto;
+	text-align:center;
+	max-width: 100%;
+	a:nth-of-type(even) {
+        animation-name: floating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+	}
+	a:nth-of-type(odd) {
+        animation-name: floating;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+	}
+}
+
+// Footer link styling 
+footer a {
+    display: inline-block;
+	margin:2%;
+	padding:2vw;
+	border: 2px solid $color-11;
+	border-radius: 50%;
+	text-decoration:none;
+	background-color: lighten($color-11, 30%);
+	//background-color:$color-11;
+	color:$color-1;
+	font-weight: bold;
+	font-family: $primary-font;
+	font-size: 2vw;
+  
+	&:nth-child(1){
+		padding: 2vw 1.3vw;
+	}
+
+	&:nth-child(4){
+		padding: 2vw 1.8vw;
+	}
+
+	&:hover {
+		
+	color:$color-1;
+	border: 2px solid $color-6;
+	background-color: $color-6;
+	-webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	-o-transition: background-color 1s ease-out;
+	transition: background-color 1s ease-out;
+  
+	}
+}

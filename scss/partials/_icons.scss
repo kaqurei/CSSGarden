@@ -1,0 +1,88 @@
+
+/* -------------------------------------- ICONS -------------------------------------- */
+$icon-width: 40px;
+$icon-height: 40px;
+$icon-margin-left: .7em;
+$icon-margin-right: .7em;
+
+
+
+// Icon after h3
+
+/* ICON The Road to Enlightenment */
+.preamble h3:before{
+    content: "";
+    display: inline-block;
+    background: url("../img/turtle.svg") no-repeat center;
+    background-size: 100%;
+    width: $icon-width;
+    height: $icon-height;
+    margin-right:$icon-margin-right;
+    animation: icons 3.7s ease-in-out infinite;
+}
+
+/* ICON So What is This About? */
+.explanation h3:after{
+    content: "";
+    display: inline-block;
+    background: url("../img/seahorse2.svg") no-repeat center;
+    background-size: 100%;
+    width: $icon-width;
+    height: $icon-height;
+    margin-left:.5em;
+    animation: icons-two 4s ease-in-out infinite;
+}
+
+/* ICON Participation */
+.participation h3:before{
+    content: "";
+    display: inline-block;
+    background: url("../img/shell.svg") no-repeat center;
+    background-size: 100%;
+    width: $icon-width;
+    height: $icon-height;
+    margin-right:$icon-margin-right;
+    animation: icons 3.5s ease-in-out infinite;
+}
+
+/* ICON Benefits */
+.benefits h3:after{
+    content: "";
+    display: inline-block;
+    background: url("../img/fish.svg") no-repeat center;
+    background-size: 100%;
+    width: $icon-width;
+    height: $icon-height;
+    margin-left:$icon-margin-left;
+    animation: icons-two 4s ease-in-out infinite;
+}
+
+/* ICON Requirements */
+.requirements h3:before{
+    content: "";
+    display: inline-block;
+    background: url("../img/starfish.svg") no-repeat center;
+    background-size: 100%;
+    width: $icon-width;
+    height: $icon-height;
+    margin-right:$icon-margin-right;
+    animation: icons 3.5s ease-in-out infinite;
+}
+
+
+/* ICON Animation */
+
+@keyframes icons {
+    from { transform: translate(-0.5px,  0px); }
+    65%  { transform: translate(0, -7px); }
+    to   { transform: translate(-1px, -0px); } 
+
+}
+
+@keyframes icons-two {
+    from { transform: translate(1px,  0px); }
+    65%  { transform: translate(0, -6px); }
+    to   { transform: translate(1px, -0px); }       
+
+}
+

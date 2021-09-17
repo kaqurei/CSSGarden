@@ -1,0 +1,43 @@
+ /* Header Styling */
+ header {
+    margin: 5vw 0vw 5vw 0vw;
+    h1 {
+        font-family: $header-font;
+        font-size: 7vw;
+        line-height: 2vw;
+        text-align: center;
+        color: $color-2;
+        -webkit-text-fill-color: $transparent-white;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: $color-5;
+        text-shadow: 2px 2px $transparent-white;
+        ::after {
+            content: "!";
+        }
+    }
+    h2 {
+        text-align: right;
+        font-family: $secondary-font;
+        line-height: 1vw;
+        font-size: 3vw;
+        color: $color-10;
+    }    
+}
+
+/* Header 1 float animation */
+header h1 {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+/* Header 2 zoom-in zoom-out animation */
+// header h2 {
+//	animation-name: zoomUnderwater;
+//	animation-duration: 8s;
+//	animation-iteration-count: infinite;
+//    animation-direction: alternate;
+//   margin-top: 5px;
+// }
